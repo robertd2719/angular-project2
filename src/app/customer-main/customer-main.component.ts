@@ -7,10 +7,14 @@ import { CUSTOMERS, Customer} from '../data/data';
   styleUrls: ['./customer-main.component.css']
 })
 export class CustomerMainComponent implements OnInit {
+
   customers:Customer[];
 
   constructor() {
-    this.customers = CUSTOMERS;
+    this.customers = CUSTOMERS
+  }
+  onCustomerAdd(customers:Customer[]){
+    this.customers = customers;
   }
 
 

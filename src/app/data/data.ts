@@ -1,9 +1,9 @@
 export interface Customer{
-  id:number;
-  firstName: string;
-  lastName: string;
-  email: string;
-  active: boolean
+  id?:number;
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  active?: boolean
 }
 
 export const CUSTOMERS:Customer[] = [
@@ -20,5 +20,12 @@ export const CUSTOMERS:Customer[] = [
     lastName: "Monroe",
     email: "MandM@gmail.com",
     active: false
+  },
+  {
+    id:3,
+    firstName:"George",
+    lastName: "Martin",
+    email:"wot@gmail.com",
+    active: true
   }
 ]
