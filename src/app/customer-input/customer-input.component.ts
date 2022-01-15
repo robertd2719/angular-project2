@@ -37,8 +37,12 @@ export class CustomerInputComponent implements OnInit {
       email: this.email,
       active: this.active
     }
-    this.customers.push(this.newCust);
-    this.onCustomerAdd.emit(this.customers);
+    if (this.firstName ==='' || this.lastName ==='' || this.email === '' ){
+      alert("Please enter correct user name and password")
+    } else {
+      this.customers.push(this.newCust);
+      this.onCustomerAdd.emit(this.customers);
+    }
   }
   ngOnInit(): void {
   }
