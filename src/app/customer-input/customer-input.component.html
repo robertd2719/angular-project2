@@ -11,6 +11,9 @@
         id="firstName"
         [(ngModel)]="firstName"
       />
+      <!-- <div *ngIf=""class="alert alert-danger my-1" role="alert">
+        *firstname cannot be blank
+      </div> -->
     </div>
     <div class="mb-3">
       <label for="lastName" class="form-label">Last Name:</label>
@@ -21,6 +24,7 @@
         id="lastName"
         [(ngModel)]="lastName"
       />
+
     </div>
     <div class="mb-3">
       <label class="form-label" for="email">Email</label>
@@ -31,6 +35,7 @@
         class="form-control"
         [(ngModel)]="email"
       />
+
     </div>
 
     <div class="text-center container my-3">

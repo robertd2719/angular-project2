@@ -19,14 +19,12 @@ export class CustomerInputComponent implements OnInit {
   @Output()
   onCustomerAdd = new EventEmitter<Customer[]>();
 
-
   constructor() {
     this.firstName = '';
     this.lastName = '';
     this.email = '';
     this.active = true;
     this.newCust = {};
-
   }
 
   createNewCustomer():void{
