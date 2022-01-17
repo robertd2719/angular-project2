@@ -3,7 +3,6 @@
   <div class="table">
     <thead class="text-center">
       <tr>
-        <th scope="row">Id</th>
         <th scope="row">First Name</th>
         <th scope="row">Last Name</th>
         <th scope="row">Email</th>
@@ -13,7 +12,6 @@
     </thead>
     <tbody>
       <tr *ngFor="let customer of customers">
-        <th scope="row">{{ customer.id }}</th>
         <td scope="row">{{ customer.firstName }}</td>
         <td scope="row">{{ customer.lastName }}</td>
         <td scope="row">{{customer.email}}</td>

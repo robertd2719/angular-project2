@@ -1,5 +1,6 @@
+import {UUID} from 'angular2-uuid';
 export interface Customer{
-  id?:number;
+  id?:any;
   firstName?: string;
   lastName?: string;
   email?: string;
@@ -8,21 +9,21 @@ export interface Customer{
 
 export const CUSTOMERS:Customer[] = [
   {
-    id:1,
+    id:UUID.UUID(),
     firstName:"Jimmy",
     lastName: "Johnson",
     email: "test@gmail.com",
     active : true
   },
   {
-    id:2,
+    id:UUID.UUID(),
     firstName:"Marilyn",
     lastName: "Monroe",
     email: "MandM@gmail.com",
     active: false
   },
   {
-    id:3,
+    id:UUID.UUID(),
     firstName:"George",
     lastName: "Martin",
     email:"wot@gmail.com",

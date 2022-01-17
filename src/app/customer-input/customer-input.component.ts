@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Customer } from '../data/data';
+import {UUID} from 'angular2-uuid';
 
 @Component({
   selector: 'app-customer-input',
@@ -29,7 +30,7 @@ export class CustomerInputComponent implements OnInit {
 
   createNewCustomer():void{
     this.newCust = {
-      id: this.customers.length + 1,
+      id: UUID.UUID(),
       firstName: this.firstName,
       lastName: this.lastName,
       email: this.email,
