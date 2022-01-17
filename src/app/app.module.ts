@@ -9,6 +9,8 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerInputComponent } from './customer-input/customer-input.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { ObserverComponent } from './observer/observer.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HomeComponent } from './home/home.component';
     CustomerListComponent,
     CustomerInputComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ObserverComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +29,8 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent},
       { path: 'customers', component : CustomerMainComponent},
+      { path: 'observer', component: ObserverComponent},
+      { path: 'user', component: UserComponent}
     ])
   ],
   providers: [],
