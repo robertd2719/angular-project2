@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule} from '@angular/router'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CustomerMainComponent } from './customer-main/customer-main.component';
@@ -26,6 +27,7 @@ import { UserComponent } from './user/user.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent},
       { path: 'customers', component : CustomerMainComponent},

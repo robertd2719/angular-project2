@@ -18,11 +18,11 @@ export class UserService {
 
   // our getusers is going to return an array of observable users
   // we also need to remember to pass types for the user to return from
-  getUser():Observable<User[]>{
+  getUsers():Observable<User[]>{
     return this.http.get<User[]>(this.url);
   }
 
-  getUsers(): Observable<User>{
+  getUser(): Observable<User>{
     return this.http.get<User>(`${this.url}/1`);
   }
 }
