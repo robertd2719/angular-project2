@@ -1,4 +1,4 @@
 <app-customer-input [customers]="customers" (onCustomerAdd)="onCustomerAdd($event)"></app-customer-input>
 <div class="container mt-5 p-3 shadow-sm border rounded-3 w-75">
-  <app-customer-list [customers]="customers"></app-customer-list>
+  <app-customer-list (onCustomerDelete)="onCustomerDelete($event)" [customers]="customers"></app-customer-list>
 </div>

@@ -16,6 +16,9 @@ export class CustomerMainComponent implements OnInit {
   onCustomerAdd(customers:Customer[]){
     this.customers = customers;
   }
+  onCustomerDelete(customers:Customer[]){
+    this.customers = customers;
+  }
 
 
   ngOnInit(): void {

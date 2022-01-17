@@ -40,8 +40,15 @@ export class CustomerInputComponent implements OnInit {
     } else {
       this.customers.push(this.newCust);
       this.onCustomerAdd.emit(this.customers);
+      this.clearUserInput();
     }
   }
+  clearUserInput(){
+    this.firstName='';
+    this.lastName='';
+    this.email='';
+  }
+
   ngOnInit(): void {
   }
 
